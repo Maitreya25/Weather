@@ -1,6 +1,7 @@
 package com.maitreya.weather.API;
 
 import android.icu.text.SimpleDateFormat;
+import android.icu.util.TimeZone;
 import android.util.Log;
 import com.maitreya.weather.API.ApiResult;
 import java.io.BufferedReader;
@@ -21,10 +22,11 @@ public class ApiRequestTask {
 
     // Create a SimpleDateFormat to format the date and time
     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:00");
-
+    dateFormat.setTimeZone(TimeZone.getTimeZone("UTC"));
+        
     // Format the date and time as a string
     String formattedDateTime = dateFormat.format(currentDate);
-
+        
     Executor executor = Executors.newSingleThreadExecutor();
     executor.execute(
         new Runnable() {
@@ -37,7 +39,6 @@ public class ApiRequestTask {
                       + "&longitude="
                       + longitude
                       + "&hourly=temperature_2m";
-              Log.e("hs", api);
               JSONObject json = new JSONObject(readUrl(api));
               ApiResult.elevation = json.getDouble("elevation");
 
