@@ -1,0 +1,50 @@
+{
+  "allFiles": [
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/My Application/app/src/main/java/com/maitreya/weather/API/ApiRequestTask.java",
+      "selection": {
+        "end": {
+          "column": 0,
+          "index": -1,
+          "line": 0
+        },
+        "start": {
+          "column": 0,
+          "index": -1,
+          "line": 0
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/My Application/app/src/main/java/com/maitreya/weather/MainActivity.java",
+      "selection": {
+        "end": {
+          "column": 27,
+          "index": -1,
+          "line": 22
+        },
+        "start": {
+          "column": 27,
+          "index": -1,
+          "line": 22
+        }
+      }
+    },
+    {
+      "file": "/storage/emulated/0/AndroidIDEProjects/My Application/app/src/main/res/values/strings.xml",
+      "selection": {
+        "end": {
+          "column": 11,
+          "index": -1,
+          "line": 1
+        },
+        "start": {
+          "column": 11,
+          "index": -1,
+          "line": 1
+        }
+      }
+    }
+  ],
+  "selectedFile": "/storage/emulated/0/AndroidIDEProjects/My Application/app/src/main/java/com/maitreya/weather/API/ApiRequestTask.java"
+}
